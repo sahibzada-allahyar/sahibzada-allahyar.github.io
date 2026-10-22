@@ -7,7 +7,7 @@ body {
   font-size: 17px;
   line-height: 1.38;
   margin: 0.55rem 1rem 2.5rem;
-  max-width: 52rem;
+  max-width: 70rem;
 }
 
 a:link { color: #0000ee; }
@@ -67,7 +67,30 @@ li { margin: 0.18rem 0; }
 }
 
 .banner:has(.portrait) {
-  grid-template-columns: auto 1fr 15rem;
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.who-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.4rem 1.2rem;
+}
+
+.who-top .sidelinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.05rem 0.85rem;
+  max-width: 40rem;
+}
+
+.who-top .sidelinks a {
+  display: inline;
+}
+
+.who p {
+  margin-top: 0.25rem;
 }
 
 .portrait {
@@ -132,6 +155,9 @@ footer {
 @media (max-width: 720px) {
   body { margin: 0.7rem 0.85rem 2rem; }
   .banner, .linkcols { grid-template-columns: 1fr; }
+  .banner:has(.portrait) { grid-template-columns: 1fr; }
+  .who-top { display: block; }
+  .who-top .sidelinks { justify-content: flex-start; max-width: none; margin-top: 0.35rem; }
   .portrait figcaption { width: 180px; }
   .toplinks a { display: inline-block; margin: 0 0.8rem 0.25rem 0; }
 }
