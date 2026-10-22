@@ -61,9 +61,23 @@ li { margin: 0.18rem 0; }
 .banner {
   display: grid;
   grid-template-columns: 1fr 15rem;
-  gap: 0.4rem 1.6rem;
+  gap: 0.4rem 1.4rem;
   align-items: start;
   margin-bottom: 0.2rem;
+}
+
+.banner:has(.portrait) {
+  grid-template-columns: auto 1fr 15rem;
+}
+
+.portrait {
+  margin: 0;
+}
+
+.portrait figcaption {
+  width: 180px;
+  font-size: 0.92rem;
+  margin-top: 0.25rem;
 }
 
 .banner nav a,
@@ -90,6 +104,11 @@ figure img {
   border: 1px solid #bbb;
 }
 
+figure.portrait img {
+  width: 180px;
+  display: block;
+}
+
 .linkcols {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -113,5 +132,6 @@ footer {
 @media (max-width: 720px) {
   body { margin: 0.7rem 0.85rem 2rem; }
   .banner, .linkcols { grid-template-columns: 1fr; }
+  .portrait figcaption { width: 180px; }
   .toplinks a { display: inline-block; margin: 0 0.8rem 0.25rem 0; }
 }
