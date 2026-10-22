@@ -3,3 +3,4 @@
 *.pem
 *.key
 logs/
+.DS_Store
