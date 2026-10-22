@@ -127,6 +127,18 @@ figure img {
   border: 1px solid #bbb;
 }
 
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  margin: 0.7rem 0 1rem;
+}
+
+.charts figure { margin: 0; }
+
+.charts figure img { width: 340px; }
+
 figure.portrait img {
   width: 180px;
   display: block;
