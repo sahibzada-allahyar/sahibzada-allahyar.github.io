@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sahibzada-allahyar.github.io/sitemap.xml
