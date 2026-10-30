@@ -22,15 +22,30 @@ h1 {
 }
 
 h2 {
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   font-weight: bold;
-  margin: 1.15rem 0 0.3rem;
+  margin: 1.35rem 0 0.35rem;
 }
 
 p { margin: 0.55rem 0; }
 
 ul { margin: 0.3rem 0 0.7rem; padding-left: 1.3rem; }
 li { margin: 0.18rem 0; }
+
+main { max-width: 46rem; }
+
+main li { margin: 0.3rem 0; }
+
+mark {
+  background: #fff1a6;
+  color: inherit;
+  padding: 0 0.12em;
+}
+
+.tagline {
+  font-size: 1.06rem;
+  line-height: 1.45;
+}
 
 .skip {
   position: absolute;
@@ -76,6 +91,8 @@ li { margin: 0.18rem 0; }
   align-items: start;
   gap: 0.4rem 1.2rem;
 }
+
+.who-top h1 { white-space: nowrap; }
 
 .who-top .sidelinks {
   display: flex;
