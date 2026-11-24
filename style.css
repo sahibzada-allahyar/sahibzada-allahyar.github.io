@@ -212,3 +212,5 @@ footer {
   background: #e65a10;
   color: #fff;
 }
+
+.charts figure.aa img { width: 260px; }
