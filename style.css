@@ -190,3 +190,25 @@ footer {
   .portrait figcaption { width: 180px; }
   .toplinks a { display: inline-block; margin: 0 0.8rem 0.25rem 0; }
 }
+
+.subscribe { margin: 0.6rem 0 0; }
+
+.subscribe a,
+.subscribe a:link,
+.subscribe a:visited {
+  display: inline-block;
+  color: #fff;
+  background: #ff6719;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+}
+
+.subscribe a:hover,
+.subscribe a:focus {
+  background: #e65a10;
+  color: #fff;
+}
